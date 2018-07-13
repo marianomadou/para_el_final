@@ -1,2 +1,2 @@
-# para_el_final
-al de personas/generica
+# segundoparciallaboratorio2
+Segundo parcial de laboratorio

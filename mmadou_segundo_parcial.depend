@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1530307336 source:c:\test\mmadou\mmadou_segundo_parcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530307371 c:\test\mmadou\mmadou_segundo_parcial\arraylist.h
+
+1530307723 source:c:\test\mmadou\mmadou_segundo_parcial\funciones.c
+	<stdio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"ArrayList.h"
+	"funciones.h"
+
+1530307977 c:\test\mmadou\mmadou_segundo_parcial\funciones.h
+	"funciones.h"
+	"ArrayList.h"
+
+1530307937 source:c:\test\mmadou\mmadou_segundo_parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1531504559 source:c:\users\administrador\downloads\apuntes tecnicatura\programacion\segundoparciallaboratorio2-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1531503619 c:\users\administrador\downloads\apuntes tecnicatura\programacion\segundoparciallaboratorio2-master\funciones.h
+	"funciones.h"
+	"ArrayList.h"
+
+1531494356 c:\users\administrador\downloads\apuntes tecnicatura\programacion\segundoparciallaboratorio2-master\arraylist.h
+
+1531504648 source:c:\users\administrador\downloads\apuntes tecnicatura\programacion\segundoparciallaboratorio2-master\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1531504497 source:c:\users\administrador\downloads\apuntes tecnicatura\programacion\segundoparciallaboratorio2-master\funciones.c
+	<stdio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"ArrayList.h"
+	"funciones.h"
+
