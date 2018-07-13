@@ -289,13 +289,21 @@ typedef struct{
  * \return void
  */ void parseGuardarDatos(ArrayList* lista,char filename[]);
 
-
-
 /** \brief egresa datos desde un array de estructura hacia un archivo .csv
 * \param l ArrayList*
 * \return void
 */ void parseGuardarDatosSueldos(ArrayList* lista,char filename[]);
 
+
+ /** \brief ingresa datos desde un archivo .dat hacia un array de estructuras
+ * \param l ArrayList*
+ * \return int ultimo id de empleado para poder igresar uno nuevo en caso de que sea necesario
+ */ int ParseCargadeDatosBin(char nombrearchivo[], ArrayList* this);
+
+/** \brief egresa datos desde un array de estructura hacia un archivo .dat
+* \param l ArrayList*
+* \return void
+*/ int parseGuardarDatosBin(ArrayList* this,char nombrearchivo[]);
 
 #endif // FUNCIONES_H_INCLUDED
 

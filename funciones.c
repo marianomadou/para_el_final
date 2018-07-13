@@ -7,6 +7,17 @@
 #include "ArrayList.h"
 #include "funciones.h"
 
+// CONSTRUCTOR ARRAYLIST
+
+eAlumno* emp_newStruct()
+{
+    eAlumno* aux;
+
+    aux=(eAlumno*)malloc(sizeof(eAlumno));
+
+    return aux;
+}
+
 //PARSEOS
 
 int parseCargaDeDatos(ArrayList* lista,char filename[])
@@ -95,6 +106,62 @@ void parseGuardarDatosSueldos(ArrayList* lista,char filename[])//en out2.csv
     }
             fclose(fp);
 
+}
+
+int ParseCargadeDatosBin(char nombrearchivo[], ArrayList* this)
+{
+    int retorno=-1;
+    if(this!=NULL)
+    {
+        retorno =0;
+        FILE* pFile=fopen(nombrearchivo,"rb");
+        if(pFile != NULL)
+        {
+            do
+            {
+                eAlumno* aux;
+                aux = (eAlumno*)emp_newStruct();
+                if(fread(aux,sizeof(eAlumno),1,pFile))
+                {
+                    al_add(this,aux);
+                    retorno =1;
+                }
+            }
+            while(!feof(pFile));
+            fclose(pFile);
+        }
+    }
+    return retorno;
+}
+
+int parseGuardarDatosBin(ArrayList* this,char nombrearchivo[])
+{
+    int retorno=-1;
+
+    if(this!=NULL)
+    {
+        eAlumno* aux;
+        FILE *f;
+        f=fopen(nombrearchivo, "wb");
+        if(f==NULL)
+        {
+            retorno=0;
+        }
+        else
+        {
+            int len;
+            len=al_len(this);
+
+            for (int i=0; i<len; i++)
+            {
+                aux = (eAlumno*)al_get(this, i);
+                fwrite(aux,sizeof(eAlumno),1,f);
+                retorno=1;
+            }
+            fclose(f);
+        }
+    }
+    return retorno;
 }
 
 
@@ -227,16 +294,6 @@ int funcion_ordenarEdad(void* alumno1, void* alumno2)
     return returnAux;
 }
 
-// FULL FUNCIONES ARRAYLIST
-
-eAlumno* emp_newStruct()
-{
-    eAlumno* aux;
-
-    aux=(eAlumno*)malloc(sizeof(eAlumno));
-
-    return aux;
-}
 
 //MASCARA PROGRAMA
 
