@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1532644667 source:d:\cea_1b\cea 1b - final\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"funciones.h"
+
+1532292259 d:\cea_1b\cea 1b - final\arraylist.h
+
+1532648931 d:\cea_1b\cea 1b - final\funciones.h
+	"ArrayList.h"
+
+1532648017 source:d:\cea_1b\cea 1b - final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"funciones.h"
+
+1532648931 source:d:\cea_1b\cea 1b - final\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	"ArrayList.h"
+
+1532685931 source:c:\users\mm\desktop\utn\finales\cea 1b - final\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"funciones.h"
+
+1532685931 c:\users\mm\desktop\utn\finales\cea 1b - final\arraylist.h
+
+1532685931 c:\users\mm\desktop\utn\finales\cea 1b - final\funciones.h
+	"ArrayList.h"
+
+1532685931 source:c:\users\mm\desktop\utn\finales\cea 1b - final\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	"ArrayList.h"
+
+1532685931 source:c:\users\mm\desktop\utn\finales\cea 1b - final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"funciones.h"
+
